@@ -1,10 +1,12 @@
 import React from 'react'
 import './PodcastList.css'
 import SinglePodcast from './SinglePodcast'
+import Search from './Search'
 
 export default () =>
     <div className="site-section bg-light">
         <div className="container">
+        <Search />
 
             <div className="row mb-5" data-aos="fade-up">
                 <div className="col-md-12 text-center">
