@@ -1,6 +1,5 @@
 import React from 'react'
 import './Player.css'
-import './Player.js'
 
 export default props =>
     <div className="container">
