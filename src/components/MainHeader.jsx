@@ -6,7 +6,7 @@ export default () =>
         <div className="container">
             <div className="row align-items-center">
                 <div className="col-3" data-aos="fade-down">
-                    <h1><a href="#" className="text-white h2">Claramente</a></h1>
+                    {/*<h1><a href="#" className="text-white h2">Claramente</a></h1>*/}
                 </div>
                 <div className="col-9" data-aos="fade-down">
                     <nav className="site-navigation position-relative text-right text-md-right" role="navigation">
