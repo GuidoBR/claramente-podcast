@@ -8,8 +8,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'font-awesome/css/font-awesome.min.css';
 
 export default class Podcast extends Component {
-    state = {
-        podcasts: []
+    constructor() {
+        super();
+        state = {
+            podcasts: []
+        };
     }
     
     getPodcasts() {
@@ -29,7 +32,7 @@ export default class Podcast extends Component {
         return (
             <div className="podcast-app">
                 <Player />
-                <PodcastList />
+                <PodcastList podcasts={this.state.podcasts} />
             </div>
         )
     }
