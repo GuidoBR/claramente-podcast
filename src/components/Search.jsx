@@ -7,12 +7,13 @@ export default props => (
             id="description" 
             className="form-control" 
             placeholder="Busque um episódio"
-            onChange={props.handleChange}
+            onChange={props.handleDescriptionChange}
+            onKeyUp={props.search}
             value={props.description}
         ></input>
         
       <span className="input-group-append">
-        <button className="btn btn-outline-secondary" type="button">
+        <button className="btn btn-outline-secondary" type="button" onClick={() => props.search(props.description)}>
             <i className="fa fa-search"></i>
         </button>
       </span>
