@@ -6,11 +6,10 @@ import Search from './Search'
 export default () =>
     <div className="site-section bg-light">
         <div className="container">
-        <Search />
+            <Search />
 
             <div className="row mb-5" data-aos="fade-up">
                 <div className="col-md-12 text-center">
-                <h2 className="font-weight-bold text-black">Recent Podcasts</h2>
                 </div>
             </div>
 
