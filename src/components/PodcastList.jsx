@@ -19,7 +19,7 @@ export default props => (
                         podcastFile={podcast.File} 
                         podcastTitle={podcast.Title} 
                         image={podcast.Image} 
-                        description={podcast.Description} 
+                        description={podcast.Description.substring(0, 240) + "..."} 
                         author="Fernanda Pantoja"
                         key={podcast.id} />
                 )

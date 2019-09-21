@@ -20,7 +20,6 @@ export default class Podcast extends Component {
             .then((r) => r.json())
             .then((data) =>{
                 this.setState({podcasts: data.episodes});
-                console.log(this.state);
             })
     }
 
