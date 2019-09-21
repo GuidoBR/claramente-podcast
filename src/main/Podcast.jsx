@@ -10,7 +10,7 @@ import 'font-awesome/css/font-awesome.min.css';
 export default class Podcast extends Component {
     constructor() {
         super();
-        state = {
+        this.state = {
             podcasts: []
         };
     }
@@ -19,8 +19,8 @@ export default class Podcast extends Component {
         fetch('data/Podcasts.json')
             .then((r) => r.json())
             .then((data) =>{
-                this.state.podcasts = data.episodes;
-                console.log(this.state.podcasts);
+                this.setState({podcasts: data.episodes});
+                console.log(this.state);
             })
     }
 

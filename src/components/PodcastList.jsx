@@ -4,7 +4,7 @@ import SinglePodcast from './SinglePodcast'
 import Search from './Search'
 
 export default props => (
-    <div className="site-section bg-light">
+<div className="site-section bg-light">
         <div className="container">
             <Search />
 
@@ -14,13 +14,14 @@ export default props => (
             </div>
             
             {
-                this.props.map(
+                props.podcasts.map(
                     podcast => <SinglePodcast 
-                        podcastFile={podcast.file} 
-                        podcastTitle={podcast.title} 
+                        podcastFile={podcast.File} 
+                        podcastTitle={podcast.Title} 
                         image={podcast.Image} 
-                        description={podcast.description} 
-                        author="Fernanda Pantoja" />
+                        description={podcast.Description} 
+                        author="Fernanda Pantoja"
+                        key={podcast.id} />
                 )
             }
         </div>    
