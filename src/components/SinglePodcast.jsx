@@ -10,7 +10,7 @@ export default props =>
 
             <div className="player">
                 <audio id="player2" preload="none" controls>
-                    <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3" />
+                    <source src={props.podcastFile} type="audio/mp3" />
                 </audio>
             </div>
         </div>
