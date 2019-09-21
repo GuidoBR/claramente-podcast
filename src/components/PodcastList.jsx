@@ -1,5 +1,6 @@
 import React from 'react'
 import './PodcastList.css'
+import SinglePodcast from './SinglePodcast'
 
 export default () =>
     <div className="site-section bg-light">
@@ -10,20 +11,14 @@ export default () =>
                 <h2 className="font-weight-bold text-black">Recent Podcasts</h2>
                 </div>
             </div>
-    
-        <div className="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up">
-            <div className="image"></div>
-                <div className="text">
-                    <h3 className="font-weight-light"><a href="single-post.html">Episode 08: How To Create Web Page Using Bootstrap 4</a></h3>
-                    <div className="text-white mb-3"><span className="text-black-opacity-05"><small>By Mike Smith <span className="sep">/</span> 16 September 2017 <span className="sep">/</span> 1:30:20</small></span></div>
-                    <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt.</p>
 
-                    <div className="player">
-                        <audio id="player2" preload="none" controls>
-                        <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3" />
-                        </audio>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <SinglePodcast podcastTitle="Como tomar melhores decisões" image="/img/claramente-logo.jpg" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt." author="Fernanda Pantoja" />
+            <SinglePodcast podcastTitle="A ciência da felicidade" image="/img/claramente-logo.jpg"  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt." author="Fernanda Pantoja" />
+            <SinglePodcast podcastTitle="A boa liderança" image="/img/claramente-logo.jpg"  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt." author="Fernanda Pantoja" />
+            <SinglePodcast podcastTitle="Os hábitos no seu cérebro" image="/img/claramente-logo.jpg"  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt." author="Fernanda Pantoja" />
+            <SinglePodcast podcastTitle="O timing perfeito" image="/img/claramente-logo.jpg"  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt." author="Fernanda Pantoja" />
+            <SinglePodcast podcastTitle="O que são vicios comportamentais e como lidar com eles" image="/img/claramente-logo.jpg"  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt." author="Fernanda Pantoja" />
+            <SinglePodcast podcastTitle="O cérebro e a meditação" image="/img/claramente-logo.jpg"  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt." author="Fernanda Pantoja" />
+            <SinglePodcast podcastTitle="A importância de uma mente focada" image="/img/claramente-logo.jpg"  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat mollitia consequatur, optio nesciunt placeat. Iste voluptates excepturi tenetur, nesciunt." author="Fernanda Pantoja" />
+        </div>    
     </div>
