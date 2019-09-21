@@ -13,7 +13,7 @@
         bottom: 0;
         right: 0;
         top: 0;
-        background: rgba(0, 0, 0, 0.4); }
+        background: rgba(45, 99, 44, 0.4) url("../img/background.webp"); }
     .site-blocks-cover .player {
       position: absolute;
       bottom: -250px;
