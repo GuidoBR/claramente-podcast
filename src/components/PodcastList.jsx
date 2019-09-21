@@ -16,11 +16,11 @@ export default props => (
             {
                 props.podcasts.map(
                     podcast => <SinglePodcast 
-                        podcastFile={podcast.File} 
+                        AudioUrl={podcast.AudioUrl} 
                         podcastTitle={podcast.Title} 
                         image={podcast.Image} 
                         description={podcast.Description.substring(0, 240) + "..."} 
-                        author="Fernanda Pantoja"
+                        author={podcast.Author}
                         key={podcast.id} />
                 )
             }
