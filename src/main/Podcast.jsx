@@ -11,6 +11,7 @@ export default class Podcast extends Component {
     state = {
         podcasts: [],
         description: '',
+        selectedPodcast: {}
     };
 
     constructor() {
@@ -24,7 +25,7 @@ export default class Podcast extends Component {
         fetch('data/Podcasts.json')
             .then((r) => r.json())
             .then((data) =>{
-                this.setState({podcasts: data.episodes});
+                this.setState({podcasts: data.episodes, selectedPodcast: data.episodes[0]});
             })
     }
 
@@ -50,7 +51,7 @@ export default class Podcast extends Component {
     render() {
         return (
             <div className="podcast-app">
-                <Player />
+                <Player selectedPodcast={this.state.selectedPodcast} />
                 <PodcastList
                     podcasts={this.state.podcasts}
                     search={this.search}
